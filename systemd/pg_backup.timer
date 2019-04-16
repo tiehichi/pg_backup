@@ -1,0 +1,9 @@
+[Unit]
+Description=backup postgresql every 12 hours
+
+[Timer]
+OnBootSec=30min
+OnUnitActiveSec=12h
+
+[Install]
+WantedBy=timers.target
